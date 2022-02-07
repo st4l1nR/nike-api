@@ -1,0 +1,17 @@
+{
+  "collectionName": "components_product_colors",
+  "info": {
+    "displayName": "color",
+    "icon": "palette"
+  },
+  "options": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "hex": {
+      "type": "string"
+    }
+  }
+}

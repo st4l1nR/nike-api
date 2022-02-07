@@ -1,0 +1,25 @@
+{
+  "kind": "collectionType",
+  "collectionName": "carts",
+  "info": {
+    "singularName": "cart",
+    "pluralName": "carts",
+    "displayName": "Cart",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "cartItems": {
+      "type": "component",
+      "repeatable": true,
+      "component": "product.cart-item"
+    },
+    "total": {
+      "type": "decimal",
+      "default": 0
+    }
+  }
+}

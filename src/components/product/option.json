@@ -1,0 +1,23 @@
+{
+  "collectionName": "components_product_options",
+  "info": {
+    "displayName": "option",
+    "icon": "cube",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true,
+      "unique": false
+    },
+    "values": {
+      "displayName": "value",
+      "type": "component",
+      "repeatable": true,
+      "component": "product.value",
+      "required": true
+    }
+  }
+}

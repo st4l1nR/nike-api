@@ -1,0 +1,27 @@
+{
+  "kind": "collectionType",
+  "collectionName": "shippings",
+  "info": {
+    "singularName": "shipping",
+    "pluralName": "shippings",
+    "displayName": "Shipping"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "city": {
+      "type": "enumeration",
+      "enum": [
+        "US",
+        "CA",
+        "EC"
+      ]
+    },
+    "price": {
+      "type": "decimal",
+      "default": 0
+    }
+  }
+}
