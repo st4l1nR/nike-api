@@ -1,5 +1,6 @@
 module.exports = [
   "strapi::errors",
+  // ...
   {
     name: "strapi::security",
     config: {
@@ -7,18 +8,8 @@ module.exports = [
         useDefaults: true,
         directives: {
           "connect-src": ["'self'", "https:"],
-          "img-src": [
-            "'self'",
-            "data:",
-            "blob:",
-            "yourBucketName.s3.yourRegion.amazonaws.com",
-          ],
-          "media-src": [
-            "'self'",
-            "data:",
-            "blob:",
-            "yourBucketName.s3.yourRegion.amazonaws.com",
-          ],
+          "img-src": ["'self'", "data:", "blob:", "res.cloudinary.com"],
+          "media-src": ["'self'", "data:", "blob:", "res.cloudinary.com"],
           upgradeInsecureRequests: null,
         },
       },
